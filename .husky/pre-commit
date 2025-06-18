@@ -1,5 +1,5 @@
- #!/usr/bin/env sh
+#!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-console.log("Running pre-commit hook...")
+echo "Running pre-commit hooks..."
 yarn lint:lint-staged
