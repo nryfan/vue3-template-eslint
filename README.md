@@ -1,29 +1,10 @@
-<!--
- * @Author: nry
- * @Date: 2025-06-17 12:09:30
- * @LastEditTime: 2025-06-18 14:29:11
- * @FilePath: \vue3-js-template\README.md
- * @Description:
- *
- * Copyright (c) 2025 by ${git_name_email}, All Rights Reserved.
--->
-<!--
- * @Author: nry
- * @Date: 2025-06-17 12:09:30
- * @LastEditTime: 2025-06-17 18:34:15
- * @FilePath: \vue3-js-template\README.md
- * @Description:
- *
- * Copyright (c) 2025 by ${git_name_email}, All Rights Reserved.
--->
-
 # Vue 3 + Vite
 
 # eslint + prettier
 
 ## eslint
 
-1.
+1. yarn create vite vue3-js-template --template vue(快速构建项目)
 2. yarn add eslint@latest -D
 3. 根目录创建 eslint.config.js 文件,
 4. yarn add @eslint/js eslint-plugin-vue globals eslint-plugin-prettier -D
@@ -51,6 +32,9 @@
    - npx --no -- commitlint --edit $1
 4. yarn add commitizen cz-git -D
 5. package.json 文件中配置
+
    - "config": { "commitizen": { "path": "node_modules/cz-git" } }
 
-- script中 "commit": "git add . && git-cz"
+   - script中 "commit": "git add . && git-cz"
+
+6. 这样直接 yarn commit 就能根据提示提交代码
