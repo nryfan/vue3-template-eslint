@@ -1,7 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import { ref } from 'vue'
-console.log(33)
 </script>
 
 <template>

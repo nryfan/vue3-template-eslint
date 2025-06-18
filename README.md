@@ -1,7 +1,7 @@
 <!--
  * @Author: nry
  * @Date: 2025-06-17 12:09:30
- * @LastEditTime: 2025-06-18 14:08:14
+ * @LastEditTime: 2025-06-18 14:29:11
  * @FilePath: \vue3-js-template\README.md
  * @Description:
  *
@@ -47,3 +47,10 @@
 
 1. yarn add @commitlint/cli @commitlint/config-conventional -D
 2. 根目录下创建commitlint.config.js
+3. .husky文件夹下创建commit-msg 文件,
+   - npx --no -- commitlint --edit $1
+4. yarn add commitizen cz-git -D
+5. package.json 文件中配置
+   - "config": { "commitizen": { "path": "node_modules/cz-git" } }
+
+- script中 "commit": "git add . && git-cz"
